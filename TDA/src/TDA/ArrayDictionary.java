@@ -2,7 +2,7 @@ package TDA;
 
 import java.util.Arrays;
 
-public class ArrayDictionary<K, V> implements Dictionary<K, V> {
+public class ArrayDictionary<K extends Comparable<K>, V> implements Dictionary<K, V> {
 	
 	private Entry<K, V[]>[] array;
 	private int size;

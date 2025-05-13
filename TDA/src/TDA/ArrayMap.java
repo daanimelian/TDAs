@@ -2,11 +2,11 @@ package TDA;
 
 public class ArrayMap<K extends Comparable<K>, V> implements Map<K, V> {
 	
-	private Entry<K,V>[] array;
+	private Entrada<K,V>[] array;
 	private int size;
 	
 	public ArrayMap() {
-		array = (Entry<K,V>[])new Entrada[100];
+		array = (Entrada<K,V>[])new Entrada[100];
 		size = 0;
 	}
 	

@@ -1,6 +1,6 @@
 package TDA;
 
-public interface Dictionary<K, V> {
+public interface Dictionary<K extends Comparable<K>, V> {
 	public int size();
 	public boolean isEmpty();
 	public Iterable<V> get(K k);

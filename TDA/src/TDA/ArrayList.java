@@ -67,6 +67,21 @@ public class ArrayList <T> implements List <T>{
         return lista[size-1];
     }
 
+    @Override
+    public void advance() {
+
+    }
+
+    @Override
+    public T getCurrent() {
+        return null;
+    }
+
+    @Override
+    public boolean atEnd() {
+        return false;
+    }
+
 
     public int getSize() {
         return size;

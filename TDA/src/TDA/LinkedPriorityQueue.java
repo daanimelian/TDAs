@@ -50,7 +50,7 @@ public class LinkedPriorityQueue<K extends Comparable<K>, V> implements Priority
         }
 
         Entrada<K, V> nuevoElemento = new Entrada<>(key, value);
-        Node<Entrada<K, V>> nuevoNodo = new Node<>(nuevoElemento, null);
+        Node<Entrada<K, V>> nuevoNodo = new Node<>(nuevoElemento);
 
         // Si la cola está vacía, simplemente agregamos el nuevo nodo
         if (this.size == 0 || this.head.getElement().getKey().compareTo(key) > 0) {
